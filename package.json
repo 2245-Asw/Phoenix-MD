@@ -1,18 +1,18 @@
 {
-  "name": "Phoenix-MD",
-  "description": "A Simple WhatsApp Bot",
+  "name": "SCEPTRE 5003",
+  "description": "A Whatsapp chatbot by Aswin",
   "version": "1.8.0",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "pm2 start . --attach --name Phoenix-MD"
+      "start": "pm2 start . --attach --name SCEPTRE 5003"
   },
   "keywords": [
    "termux",
    "whatsapp",
    "MD",
-   "Phoenix-MD",
+   "SCEPTRE 5003",
    "WhatsApp-MD",
    "baileys-md",
    "wa-bot",
@@ -21,12 +21,12 @@
    "terumx-bot",
    "multi-device"
   ],
-  "author": "Abhishek Suresh",
+  "author": "ASWINDEV.M.S",
   "license": "Apache-2.0",
   "dependencies": {
    "@whiskeysockets/baileys": "^6.5.0",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "abhishek-ytube": "^1.0.0",
+    "aswin_1991-ytube": "^1.0.0",
     "awesome-phonenumber": "^3.4.0",
     "bitly": "^7.1.2",
     "browser-id3-writer": "^4.4.0",
