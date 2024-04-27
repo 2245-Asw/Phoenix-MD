@@ -9,34 +9,34 @@ DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 
 
 module.exports = {
-  //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
+  //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type true 
   ANTILINK: toBool(process.env.ANTI_LINK) || true,
   //_________________________________________________________________________________________________________________________________
   LOGS: toBool(process.env.LOGS) || true,
   //_________________________________________________________________________________________________________________________________
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   //_________________________________________________________________________________________________________________________________
-  AUTO_REACT: process.env.AUTO_REACT || 'false',
+  AUTO_REACT: process.env.AUTO_REACT || 'true',
   //_________________________________________________________________________________________________________________________________
-  AUDIO_DATA: process.env.AUDIO_DATA || "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg",
+  AUDIO_DATA: process.env.AUDIO_DATA || "ASWIN'S CHATBOT;ASWINDEV.M.S;https://graph.org/file/IMG_20240423_223432_058.jpg",
   //_________________________________________________________________________________________________________________________________
-  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'false',
+  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'true',
   //_________________________________________________________________________________________________________________________________
   SESSION_ID: process.env.SESSION_ID || "Phoenix~55042929ed6f0ff4e42d9ad418e28f7d", //Enter Your Session Id Here
   //_________________________________________________________________________________________________________________________________
   SUDO: process.env.SUDO || "918943001343",
   //_________________________________________________________________________________________________________________________________
-  SPAM_COUNT: process.env.SPAM_COUNT || "10",
+  SPAM_COUNT: process.env.SPAM_COUNT || "20",
   //_________________________________________________________________________________________________________________________________
   LANG: process.env.LANG || "EN",
   //_________________________________________________________________________________________________________________________________
-  HANDLERS: process.env.HANDLER === "false" || '^[.]',
+  HANDLERS: process.env.HANDLER === "true" || '^[.]',
   //_________________________________________________________________________________________________________________________________
-  RMBG_KEY: process.env.RMBG_KEY || false,
+  RMBG_KEY: process.env.RMBG_KEY || true,
   //_________________________________________________________________________________________________________________________________
   BRANCH: "main",
   //_________________________________________________________________________________________________________________________________
-  STICKER_DATA: "🎯𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳;𝙰𝚋𝚑𝚒𝚜𝚑𝚎𝚔 𝚂𝚞𝚛𝚎𝚜𝚑☘️",
+  STICKER_DATA: "🎯Aswin's bot; ASWIN DEV.M.S☘️",
   //_________________________________________________________________________________________________________________________________
   WELCOME_MSG: process.env.WELCOME_MSG || "👋 Hello *@user* Welcome To Our Group *@gname*\n*Total Members:* @count\n*Group Description:*\n@gdesc {pp}",
   //_________________________________________________________________________________________________________________________________
@@ -66,7 +66,7 @@ module.exports = {
       ? new Sequelize({
           dialect: "sqlite",
           storage: DATABASE_URL,
-          logging: false,
+          logging: true,
         })
       : new Sequelize(DATABASE_URL, {
           dialect: "postgres",
@@ -76,6 +76,6 @@ module.exports = {
             native: true,
             ssl: { require: true, rejectUnauthorized: false },
           },
-          logging: false,
+          logging: true,
         }),
 };
