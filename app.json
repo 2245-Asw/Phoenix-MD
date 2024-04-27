@@ -8,7 +8,7 @@
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Enter Your Session ID",
+      "description": "Phoenix~55042929ed6f0ff4e42d9ad418e28f7d",
       "required": true
     },
     "HANDLERS": {
@@ -19,7 +19,7 @@
     "SUDO": {
       "description": "Enter Numbers With Country Code Without + Separated With , To Add More Numbers",
       "required": false,
-      "value": "919074692450"
+      "value": "918943001343"
     },
     "SPAM_COUNT": {
       "description": "Enter Number Of Times To Send Spam Message Using .spam Command",
@@ -28,32 +28,32 @@
     },
     "STICKER_DATA": {
       "description": "Enter Your Sticker PackName And Author Name",
-      "required": false,
+      "required": true,
       "value": "🎯𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳;𝙰𝚋𝚑𝚒𝚜𝚑𝚎𝚔 𝚂𝚞𝚛𝚎𝚜𝚑☘️"
     },
     "AUTO_DATA": {
       "description": "Enter Your Audio Data",
-      "required": false,
+      "required": true,
       "value": "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg"
     },
     "OWNER_NAME": {
       "description": "Enter Your Owner Name",
       "required": false,
-      "value": "Abhishek Suresh"
+      "value": "ASWINDEV.M.S"
     },
     "OWNER_NUMBER": {
       "description": "Enter Your Owner Number",
-      "required": false,
-      "value": "919074692450"
+      "required": true,
+      "value": "918943001343"
     },
     "BOT_NAME": {
       "description": "Enter Your Bot Name",
       "required": false,
-      "value": "Phoenix-MD"
+      "value": "ASWIN'S BOT"
     },
     "WORK_TYPE": {
       "description": "Enter Your Mode Type public For Public Otherwise Type private",
-      "required": false,
+      "required": true,
       "value": "public"
     },
     "HEROKU_APP_NAME": {
@@ -66,13 +66,13 @@
     },
     "AUTO_REACT": {
   "description": "If You Want To React Automatically To Messages Type true. Otherwise, Type false",
-  "value": "false",
-  "required": false
+  "value": "true",
+  "required": true
    },
     "AUTO_STATUS_READ": {
       "description": "If You Want To View Status Automatically, Type true. Otherwise, Type false",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     }
   },
   "buildpacks": [
